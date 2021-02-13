@@ -1,0 +1,69 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+    background-color: #72A69D;
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width:100vw;
+  flex-flow:column nowrap;
+  padding:15px;
+}
+input{
+  outline:none;
+  appearance:none;
+  background-color: inherit;
+  color:transparent;
+  margin:4px;
+}
+#file::-webkit-file-upload-button{
+  visibility: hidden;
+}
+#file::before{
+  content:'Select some files';
+  color:black;
+  display:inline-block;
+  padding:4px;
+  -webkit-user-select: none;
+  cursor:pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight:700;
+  background-color:white;
+  border:solid 1px black;
+}
+#file:hover::before{
+  background-color:inherit;
+  color:white;
+  text-shadow:none;
+}
+#file:active{
+  outline:0;
+}
+.content{
+  border:solid black 1px;
+  width:300px;
+  height:300px;
+  overflow:scroll;
+}
+#submit{
+  appearance:none;
+  outline:none;
+  font-size: 18px;
+  border:none;
+  border:solid 1px black;
+  padding:3px;
+  text-transform: uppercase;
+  color:black;
+  background-color: white;
+}
+#submit:hover{
+  background-color:transparent;
+  color:white;
+  border-color:white;
+}
+
